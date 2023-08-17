@@ -1,6 +1,6 @@
 function MusicPlayer() {
   return (
-    <footer className="fixed bottom-0 bg-[#000] p-4 w-full h-[88px]">
+    <footer className="z-50 fixed bottom-0 bg-[#000] p-4 w-full h-[88px]">
       <div className="flex flex-col justify-center items-center gap-2">
         <div className="flex flex-row justify-evenly items-center w-[307px]">
           <button>
