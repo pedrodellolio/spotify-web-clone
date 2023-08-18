@@ -47,16 +47,20 @@ function Playlists(props: Props) {
 
   return (
     <div className="mt-6">
-      <ul className="grid grid-rows-3 grid-cols-2 grid-co grid-flow-row gap-3 gap-x-5">
+      <ul className="grid grid-rows-3 grid-cols-2 md:grid-cols-3 md:grid-rows-2 grid-flow-col gap-3 gap-x-5">
         {props.items.map((item, index) => {
           return (
             <li
               onMouseEnter={() => handleMouseEnter(item)}
               onMouseLeave={handleMouseLeave}
               key={index}
-              className="cursor-pointer pr-4 min-w-[200px] flex flex-row items-center gap-3 bg-[#ffffff1a] rounded-md overflow-hidden hover:bg-[#fff3] duration-300"
+              className="cursor-pointer pr-4 min-w-[200px] flex flex-row items-center gap-3 bg-[#ffffff1a] rounded-md md:rounded-sm overflow-hidden hover:bg-[#fff3] duration-300"
             >
-              <img src={item.coverUrl} className="w-16 h-16" alt="" />
+              <img
+                src={item.coverUrl}
+                className="w-16 h-16 lg:w-20 lg:h-20"
+                alt=""
+              />
               {/* <div className="bg-red-500 p-8"></div> */}
               <p className="font-bold text-[0.89rem]">{item.title}</p>
             </li>

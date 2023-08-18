@@ -15,7 +15,7 @@ function ScrollableSection(props: Props) {
           Show all
         </a>
       </header>
-      <ul className="grid grid-flow-col gap-3 mt-7 overflow-x-scroll">
+      <ul className="grid grid-flow-col justify-start gap-3 mt-7 overflow-x-scroll">
         {props.items.map((item, index) => {
           return (
             <li
